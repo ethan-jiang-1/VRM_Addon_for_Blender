@@ -75,54 +75,78 @@ Create Humanoid VRM
 <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
 <div class="min-w-0 min-h-0 max-w-prose">
 <p>We will create a simple Humanoid VRM model.</p>
-<img src=../../images/humanoid.gif>
+<p><img src=../../images/humanoid.gif alt>
+</p>
 <p>After starting Blender, place the mouse cursor on the 3D Viewport and press the <code>n</code> key.</p>
-<img src=../images/humanoid1.png>
+<p><img src=../images/humanoid1.png alt>
+</p>
 <p>This will open a Sidebar from the right side. Select the <code>VRM</code> tab and click the <code>Create VRM Model</code> button.</p>
-<img src=../images/humanoid2.png>
+<p><img src=../images/humanoid2.png alt>
+</p>
 <p>Then an armature suitable for VRM output will be created automatically. An armature represents the bone structure of a 3D model.
 This add-on uses armature to represent the skeletal structure of the human figure in VRM.</p>
-<img src=../images/humanoid3.png>
+<p><img src=../images/humanoid3.png alt>
+</p>
 <p>We will use the default Cube as a torso. Select <code>Cube</code> from the <code>Scene Collection</code> in the upper right corner, select <code>Scale:</code> from <code>Item</code> in the sidebar, and set all values to <code>0.2</code> to make it small enough to be used as a torso.</p>
-<img src=../images/humanoid4.png>
+<p><img src=../images/humanoid4.png alt>
+</p>
 <p>We associate the torso with the bones of the armature. Select the tab with the square icon in the lower right corner, go to <code>Relations</code>, and set <code>Parent</code> to <code>Armature</code>, <code>Parent Type</code> to <code>Bone</code>, and <code>Parent Bone</code> to <code>spine</code>. The torso will move to the spine of the 3D model.</p>
-<img src=../images/humanoid5.png>
+<p><img src=../images/humanoid5.png alt>
+</p>
 <p>The next step is to create the head, press <code>Shift + A</code> in the 3D viewport to bring up an additional menu, select <code>Mesh</code> -> <code>UV Sphere</code>.</p>
-<img src=../images/humanoid6.png>
+<p><img src=../images/humanoid6.png alt>
+</p>
 <p>A <code>Sphere</code> will be added.</p>
-<img src=../images/humanoid7.png>
+<p><img src=../images/humanoid7.png alt>
+</p>
 <p>It is too big so we will shrink it. Select the <code>Sphere</code> or from the <code>Scene Collection</code> in the upper right corner, then select <code>Scale:</code> from the <code>Item</code> in the sidebar and set all values to <code>0.25</code>.</p>
-<img src=../images/humanoid8.png>
+<p><img src=../images/humanoid8.png alt>
+</p>
 <p>Associate this sphere with the armature&rsquo;s bone. Select the tab with the square icon in the lower right corner, go to <code>Relations</code>, set <code>Parent</code> to <code>Armature</code>, set <code>Parent Type</code> to <code>Bone</code>, and set <code>Parent Bone</code> to <code>head</code>. The sphere will move to the head of the 3D model.</p>
-<img src=../images/humanoid9.png>
+<p><img src=../images/humanoid9.png alt>
+</p>
 <p>Next, we will add the limbs: in the 3D viewport, press <code>Shift + A</code> to bring up the Add menu, and select <code>Mesh</code> -> <code>Ico Sphere</code>.</p>
-<img src=../images/humanoid10.png>
+<p><img src=../images/humanoid10.png alt>
+</p>
 <p>The <code>Icosphere</code> will be added, and at the same time, you will see <code>> Add Ico Sphere</code> in the lower-left corner of the 3D viewport. Click on this message.</p>
-<img src=../images/humanoid11.png>
+<p><img src=../images/humanoid11.png alt>
+</p>
 <p>You can then set up the new Ico Sphere to be added. We feel that the radius is too large so we will change the radius value to <code>0.1 m</code>.</p>
-<img src=../images/humanoid12.png>
+<p><img src=../images/humanoid12.png alt>
+</p>
 <p>Associate the Ico sphere with the armature bones of the limbs. Select the tab with the square icon in the lower right corner, go to <code>Relations</code>, set <code>Parent</code> to <code>Armature</code>, set <code>Parent Type</code> to <code>Bone</code>, and set <code>Parent Bone</code> to <code>upper_arm.L</code>. The sphere will move to the left upper arm of the 3D model.</p>
-<img src=../images/humanoid13.png>
+<p><img src=../images/humanoid13.png alt>
+</p>
 <p>Add the Ico sphere as before, and now associate it with the <code>hand.L</code> bone. The Ico sphere will move to the left hand.</p>
-<img src=../images/humanoid14.png>
+<p><img src=../images/humanoid14.png alt>
+</p>
 <p>Similarly, we will associate it with the <code>upper_arm.R</code> bone.</p>
-<img src=../images/humanoid15.png>
+<p><img src=../images/humanoid15.png alt>
+</p>
 <p>Associate with the <code>hand.R</code> bone.</p>
-<img src=../images/humanoid16.png>
+<p><img src=../images/humanoid16.png alt>
+</p>
 <p>Associate with the <code>upper_leg.L</code> bone.</p>
-<img src=../images/humanoid17.png>
+<p><img src=../images/humanoid17.png alt>
+</p>
 <p>Associate with the <code>lower_leg.L</code> bone.</p>
-<img src=../images/humanoid18.png>
+<p><img src=../images/humanoid18.png alt>
+</p>
 <p>Associate with the <code>upper_leg.R</code> bone.</p>
-<img src=../images/humanoid19.png>
+<p><img src=../images/humanoid19.png alt>
+</p>
 <p>Finally, associate it with the <code>lower_leg.R</code> bone.</p>
-<img src=../images/humanoid20.png>
+<p><img src=../images/humanoid20.png alt>
+</p>
 <p>Save this model as a VRM. Select <code>File</code> → <code>Export</code> → <code>VRM</code> from the menu.</p>
-<img src=../images/simple2.png>
+<p><img src=../images/simple2.png alt>
+</p>
 <p>Enter the file name and destination when the File View window appears and press <code>Export VRM</code>.</p>
-<img src=../images/simple3.png>
+<p><img src=../images/simple3.png alt>
+</p>
 <p>If successful, the VRM file will be saved to the specified location.</p>
-<img src=../../images/humanoid.gif>
+<p><img src=../../images/humanoid.gif alt>
+</p>
 <p>You can check the operation on this page.</p>
 <ul>
 <li><a href=https://hub.vroid.com/en/characters/4668234592601830916/models/6637924170056429746>https://hub.vroid.com/en/characters/4668234592601830916/models/6637924170056429746</a></li>

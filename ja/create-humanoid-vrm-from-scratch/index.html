@@ -75,54 +75,78 @@
 <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
 <div class="min-w-0 min-h-0 max-w-prose">
 <p>シンプルな人型のVRMモデルを作ります。</p>
-<img src=../../images/humanoid.gif>
+<p><img src=../../images/humanoid.gif alt>
+</p>
 <p>Blenderを起動したら、3Dビューポートにマウスカーソルを置き、 <code>n</code> キーを押してください。</p>
-<img src=../images/humanoid1.png>
+<p><img src=../images/humanoid1.png alt>
+</p>
 <p>すると右側からサイドバーが開くので <code>VRM</code> のタブを選択し <code>VRMモデルを作成</code> ボタンを押してください。</p>
-<img src=../images/humanoid2.png>
+<p><img src=../images/humanoid2.png alt>
+</p>
 <p>するとVRM出力に適したアーマチュアが自動で作られます。アーマチュアとは3Dモデルのボーンの構造を
 表すデータで、このアドオンではVRMの人型の骨格を表すためにアーマチュアを使います。</p>
-<img src=../images/humanoid3.png>
+<p><img src=../images/humanoid3.png alt>
+</p>
 <p>デフォルトで置いてある立方体を胴体にします。ただこのままでは胴体とするには大きすぎるので、まずは右上の <code>シーンコレクション</code> から <code>Cube</code> を選択、次にサイドバーの<code>アイテム</code> から <code>寸法</code> を選び、値を全て <code>0.4 m</code> にします。これで胴体として使えそうな大きさになります。</p>
-<img src=../images/humanoid4.png>
+<p><img src=../images/humanoid4.png alt>
+</p>
 <p>胴体をアーマチュアのボーンに関連付けます。右下の四角いアイコンのタブを選び、 <code>関係</code> から <code>ペアレント</code> を <code>アーマチュア</code> または <code>Armature</code> にし、 <code>親タイプ</code> を<code>ボーン</code> とし、<code>親ボーン</code> を <code>spine</code> に設定してください。胴体が3Dモデルの腰あたりに移動します。</p>
-<img src=../images/humanoid5.png>
+<p><img src=../images/humanoid5.png alt>
+</p>
 <p>次は頭を作ります。3Dビューポートで <code>Shift + A</code> を押すと追加メニューが出るので <code>メッシュ</code> → <code>UV球</code> と選んでください。</p>
-<img src=../images/humanoid6.png>
+<p><img src=../images/humanoid6.png alt>
+</p>
 <p><code>球</code> あるいは <code>Sphere</code> が追加されます。</p>
-<img src=../images/humanoid7.png>
+<p><img src=../images/humanoid7.png alt>
+</p>
 <p>これを頭として使いたいのですが、大きすぎるので縮小します。右上の <code>シーンコレクション</code> から <code>球</code> あるいは <code>Sphere</code> を選択、次にサイドバーの <code>アイテム</code> から <code>寸法</code> を選び、値を全て <code>0.5 m</code> にします。</p>
-<img src=../images/humanoid8.png>
+<p><img src=../images/humanoid8.png alt>
+</p>
 <p>この球をアーマチュアのボーンに関連付けます。右下の四角いアイコンのタブを選び、 <code>関係</code> から <code>ペアレント</code> を <code>アーマチュア</code> または <code>Armature</code> にし、 <code>親タイプ</code> を<code>ボーン</code> とし、 <code>親ボーン</code> を <code>head</code> に設定してください。球が3Dモデルの頭あたりに移動します。</p>
-<img src=../images/humanoid9.png>
+<p><img src=../images/humanoid9.png alt>
+</p>
 <p>次は手足を追加します。3Dビューポートで <code>Shift + A</code> を押すと追加メニューが出るので <code>メッシュ</code> → <code>ICO球</code>と選んでください。</p>
-<img src=../images/humanoid10.png>
+<p><img src=../images/humanoid10.png alt>
+</p>
 <p><code>ICO球</code> あるいは <code>Icosphere</code> が追加されますが、同時に3Dビューポート左下に <code>> ICO球を追加</code> という表示が出ます。こちらをクリックします。</p>
-<img src=../images/humanoid11.png>
+<p><img src=../images/humanoid11.png alt>
+</p>
 <p>すると、新しく追加するICO球の設定をすることができます。半径が大きすぎると感じたので、半径の値を <code>0.1 m</code> に変更します。</p>
-<img src=../images/humanoid12.png>
+<p><img src=../images/humanoid12.png alt>
+</p>
 <p>ICO球を手足のアーマチュアのボーンに関連付けます。右下の四角いアイコンのタブを選び、 <code>関係</code> から <code>ペアレント</code> を <code>アーマチュア</code> または <code>Armature</code> にし、<code>親タイプ</code>を <code>ボーン</code> とし、<code>親ボーン</code> を <code>upper_arm.L</code> に設定してください。球が3Dモデルの左ひじあたりに移動します。</p>
-<img src=../images/humanoid13.png>
+<p><img src=../images/humanoid13.png alt>
+</p>
 <p>先ほどと同様にICO球を追加し、次は <code>hand.L</code> ボーンに関連付けます。左手あたりにICO球が配置されます。</p>
-<img src=../images/humanoid14.png>
+<p><img src=../images/humanoid14.png alt>
+</p>
 <p>同様に、今度は <code>upper_arm.R</code> ボーンに関連付けます。</p>
-<img src=../images/humanoid15.png>
+<p><img src=../images/humanoid15.png alt>
+</p>
 <p>同様に <code>hand.R</code> ボーンに関連付けます。</p>
-<img src=../images/humanoid16.png>
+<p><img src=../images/humanoid16.png alt>
+</p>
 <p>同様に <code>upper_leg.L</code> ボーンに関連付けます。</p>
-<img src=../images/humanoid17.png>
+<p><img src=../images/humanoid17.png alt>
+</p>
 <p>同様に <code>lower_leg.L</code> ボーンに関連付けます。</p>
-<img src=../images/humanoid18.png>
+<p><img src=../images/humanoid18.png alt>
+</p>
 <p>同様に <code>upper_leg.R</code> ボーンに関連付けます。</p>
-<img src=../images/humanoid19.png>
+<p><img src=../images/humanoid19.png alt>
+</p>
 <p>最後に <code>lower_leg.R</code> ボーンに関連付けます。</p>
-<img src=../images/humanoid20.png>
+<p><img src=../images/humanoid20.png alt>
+</p>
 <p>このモデルをVRMとして保存します。メニューの <code>ファイル</code> → <code>エクスポート</code> → <code>VRM</code> を選択します。</p>
-<img src=../images/simple2.png>
+<p><img src=../images/simple2.png alt>
+</p>
 <p>ファイル保存用のウィンドウが出るので、ファイル名と保存先を入力し <code>Export VRM</code> を押します。</p>
-<img src=../images/simple3.png>
+<p><img src=../images/simple3.png alt>
+</p>
 <p>成功するとVRMファイルが指定された場所に保存されます。</p>
-<img src=../../images/humanoid.gif>
+<p><img src=../../images/humanoid.gif alt>
+</p>
 <p>こちらのページで動作確認ができます。</p>
 <ul>
 <li><a href=https://hub.vroid.com/characters/4668234592601830916/models/6637924170056429746>https://hub.vroid.com/characters/4668234592601830916/models/6637924170056429746</a></li>
